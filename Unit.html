@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <div class="conversion">
+            <h2>Length</h2>
+            <label for="lengthInput">Enter length:</label>
+            <input type="number" id="lengthInput">
+            <select id="lengthFrom">
+                <optgroup label="Metric">
+                    <option value="mm">Millimeter (mm)</option>
+                    <option value="cm">Centimeter (cm)</option>
+                    <option value="m">Meter (m)</option>
+                    <option value="km">Kilometer (km)</option>
+                    <option value="um">Micrometer (um)</option>
+                    <option value="nm">Nanometer (nm)</option>
+                </optgroup>
+                <optgroup label="Imperial">
+                    <option value="in">Inch (in)</option>
+                    <option value="ft">Foot (ft)</option>
+                    <option value="yd">Yard (yd)</option>
+                    <option value="mi">Mile (mi)</option>
+                    <option value="nmi">Nautical Mile (nmi)</option>
+                </optgroup>
+            </select>
+            <span>to</span>
+            <select id="lengthTo">
+                <optgroup label="Metric">
+                    <option value="mm">Millimeter (mm)</option>
+                    <option value="cm">Centimeter (cm)</option>
+                    <option value="m">Meter (m)</option>
+                    <option value="km">Kilometer (km)</option>
+                    <option value="um">Micrometer (um)</option>
+                    <option value="nm">Nanometer (nm)</option>
+                </optgroup>
+                <optgroup label="Imperial">
+                    <option value="in">Inch (in)</option>
+                    <option value="ft">Foot (ft)</option>
+                    <option value="yd">Yard (yd)</option>
+                    <option value="mi">Mile (mi)</option>
+                    <option value="nmi">Nautical Mile (nmi)</option>
+                </optgroup>
+            </select>
+            <button onclick="convertLength()">Convert</button>
+            <p id="lengthResult"></p>
+        </div>
+        <div class="conversion">
+            <h2>Temperature</h2>
+            <label for="tempInput">Enter temperature:</label>
+            <input type="number" id="tempInput">
+            <select id="tempFrom">
+                <option value="celsius">Celsius (°C)</option>
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+            </select>
+            <span>to</span>
+            <select id="tempTo">
+                <option value="celsius">Celsius (°C)</option>
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+            </select>
+            <button onclick="convertTemperature()">Convert</button>
+            <p id="tempResult"></p>
+        </div>
+        <div class="conversion">
+            <h2>Mass</h2>
+            <label for="massInput">Enter mass:</label>
+            <input type="number" id="massInput">
+            <select id="massFrom">
+                <optgroup label="Metric">
+                    <option value="t">Tonne (t)</option>
+                    <option value="kg">Kilogram (kg)</option>
+                    <option value="g">Gram (g)</option>
+                    <option value="mg">Milligram (mg)</option>
+                    <option value="ug">Microgram (µg)</option>
+                </optgroup>
+                <optgroup label="Imperial">
+                    <option value="lb">Pound (lb)</option>
+                    <option value="oz">Ounce (oz)</option>
+                </optgroup>
+            </select>
+            <span>to</span>
+            <select id="massTo">
+                <optgroup label="Metric">
+                    <option value="t">Tonne (t)</option>
+                    <option value="kg">Kilogram (kg)</option>
+                    <option value="g">Gram (g)</option>
+                    <option value="mg">Milligram (mg)</option>
+                    <option value="ug">Microgram (µg)</option>
+                </optgroup>
+                <optgroup label="Imperial">
+                    <option value="lb">Pound (lb)</option>
+                    <option value="oz">Ounce (oz)</option>
+                </optgroup>
+            </select>
+            <button onclick="convertMass()">Convert</button>
+            <p id="massResult"></p>
+        </div>        
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
