@@ -6,8 +6,6 @@ The Universal Unit Converter is a comprehensive and versatile web application de
 
 [Live Demo](https://sankeerthini.github.io/Universal-Unit-Converter/)
 
-![Unit](images/demo.png)
-
 ## Features
 
 - **Length Conversion**
